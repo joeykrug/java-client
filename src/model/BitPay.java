@@ -206,6 +206,8 @@ public class BitPay {
 		    content.append(line);
 		}
 		
+		rd.close();
+		
 		Object obj=JSONValue.parse(content.toString());
 		JSONObject finalResult = (JSONObject)obj;
 		
